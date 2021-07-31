@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import GlobalStyles from "./../components/GlobalStyles";
+import NextProgress from "next-progress";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }) => (
+  <div>
+    <GlobalStyles />
+    <NextProgress color="black" />
+    <Component {...pageProps} />
+  </div>
+);
 
-export default MyApp
+export default App;
