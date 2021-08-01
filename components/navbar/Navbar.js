@@ -29,7 +29,6 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     commerce.cart.retrieve().then((cart) => setCart(cart));
-    console.log("running");
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -68,7 +67,7 @@ export default function Navbar() {
                 <Cart />
                 <span tw="inline sm:hidden lg:inline">Cart</span>
                 <span tw="bg-yellow-300 w-6 h-6 flex items-center justify-center rounded-lg text-xs">
-                  {cart && cart.total_items}
+                  {(cart && cart.total_unique_items) || 0}
                 </span>
               </NavLink>
             </div>
