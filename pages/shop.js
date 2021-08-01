@@ -28,8 +28,10 @@ export default function Shop({ products, categories }) {
           </h1>
         </Container>
         <Container>
-          {categories.map((category) => {
-            return <Category category={category} products={products} />;
+          {categories.map((category, index) => {
+            return (
+              <Category category={category} products={products} key={index} />
+            );
           })}
         </Container>
       </div>

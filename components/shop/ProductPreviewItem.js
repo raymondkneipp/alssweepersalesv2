@@ -12,6 +12,7 @@ export default function ProductPreviewItem({ product }) {
           width={300}
           height={300}
           objectFit="contain"
+          alt={product.name}
         />
         <div tw="p-5 border-t flex-1 flex flex-col">
           <p tw="text-black text-opacity-70">{product.name}</p>

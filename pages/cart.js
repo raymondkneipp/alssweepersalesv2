@@ -49,45 +49,47 @@ export default function Cart() {
               </div>
             ) : (
               <>
-                {cart.map((item) => (
-                  <>
-                    <div tw="bg-white rounded-lg shadow-lg mb-5 grid sm:grid-cols-3 md:grid-cols-4 overflow-hidden">
-                      <Image
-                        src={item.media.source}
-                        layout="intrinsic"
-                        width="100"
-                        height="100"
-                        objectFit="contain"
-                      />
-                      <div tw="sm:(border-t-0 border-l) border-t p-5 sm:col-span-2 md:col-span-3">
-                        <h2 tw="text-lg text-black font-semibold text-opacity-60 mb-2">
-                          {item.product_name}
-                        </h2>
-                        <p tw="text-black text-opacity-70 mb-2">
-                          Quantity: {item.quantity}
-                        </p>
-                        <p tw="text-black text-opacity-70 mb-2">
-                          {item.line_total.formatted_with_symbol}
-                        </p>
-                        <button
-                          onClick={() => {
-                            setCart(cart.filter((cart) => item.id != cart.id));
+                {cart.map((item, index) => (
+                  <div
+                    tw="bg-white rounded-lg shadow-lg mb-5 grid sm:grid-cols-3 md:grid-cols-4 overflow-hidden"
+                    key={index}
+                  >
+                    <Image
+                      src={item.media.source}
+                      layout="intrinsic"
+                      width="100"
+                      height="100"
+                      objectFit="contain"
+                      alt={item.product_name}
+                    />
+                    <div tw="sm:(border-t-0 border-l) border-t p-5 sm:col-span-2 md:col-span-3">
+                      <h2 tw="text-lg text-black font-semibold text-opacity-60 mb-2">
+                        {item.product_name}
+                      </h2>
+                      <p tw="text-black text-opacity-70 mb-2">
+                        Quantity: {item.quantity}
+                      </p>
+                      <p tw="text-black text-opacity-70 mb-2">
+                        {item.line_total.formatted_with_symbol}
+                      </p>
+                      <button
+                        onClick={() => {
+                          setCart(cart.filter((cart) => item.id != cart.id));
 
-                            commerce.cart
-                              .remove(item.id)
-                              .then((response) =>
-                                response.success
-                                  ? router.push("/cart")
-                                  : router.push("/_error")
-                              );
-                          }}
-                          tw="inline-flex items-center bg-yellow-300 rounded-lg py-2 px-3 font-bold transition duration-300 ease-in-out transform hocus:(scale-110 bg-yellow-400 outline-none)"
-                        >
-                          Remove
-                        </button>
-                      </div>
+                          commerce.cart
+                            .remove(item.id)
+                            .then((response) =>
+                              response.success
+                                ? router.push("/cart")
+                                : router.push("/_error")
+                            );
+                        }}
+                        tw="inline-flex items-center bg-yellow-300 rounded-lg py-2 px-3 font-bold transition duration-300 ease-in-out transform hocus:(scale-110 bg-yellow-400 outline-none)"
+                      >
+                        Remove
+                      </button>
                     </div>
-                  </>
+                  </div>
                 ))}
                 <div tw="flex flex-col sm:(flex-row justify-between space-y-0) items-center space-y-4">
                   <ButtonLink href="/shop">Continue Shopping</ButtonLink>

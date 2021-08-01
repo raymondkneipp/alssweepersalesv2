@@ -17,6 +17,7 @@ export default function About() {
         width="400"
         height="250"
         objectFit="cover"
+        alt="Storefront"
       />
       <div>
         <h2 tw="text-3xl text-black font-semibold text-opacity-60 mb-4">

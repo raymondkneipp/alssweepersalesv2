@@ -117,8 +117,8 @@ export default function Contact() {
               value={honey}
               onChange={(e) => setHoney(e.target.value)}
               tw="hidden"
-              tabindex="-1"
-              autocomplete="off"
+              tabIndex="-1"
+              autoComplete="off"
             />
 
             <input

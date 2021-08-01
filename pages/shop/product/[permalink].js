@@ -35,6 +35,7 @@ export default function ProductPage({ product }) {
               height={400}
               layout="responsive"
               objectFit="contain"
+              alt={product.name}
             />
             <div tw="flex flex-col items-start p-10 space-y-4 border-t md:(border-l border-t-0)">
               <h1 tw="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">

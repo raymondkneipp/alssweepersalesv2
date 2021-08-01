@@ -47,7 +47,8 @@ export default function Navbar() {
           <Link href="/" passHref>
             <a tw="font-bold text-base sm:text-lg lg:text-xl grid grid-flow-col gap-2 items-center hocus:(underline outline-none)">
               <Logo />
-              Al's Sweeper &<br /> Sewing Center
+              Al's Sweeper &apos;
+              <br /> Sewing Center
             </a>
           </Link>
           <MenuButton toggle={handleToggle} open={open} />

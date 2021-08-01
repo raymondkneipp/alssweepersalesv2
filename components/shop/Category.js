@@ -16,7 +16,7 @@ export default function Category({ category, products }) {
         {products.map((product, index) => {
           return (
             product.categories[0].slug == category.slug &&
-            index <= 4 && <ProductPreviewItem product={product} />
+            index <= 4 && <ProductPreviewItem product={product} key={index} />
           );
         })}
       </div>
