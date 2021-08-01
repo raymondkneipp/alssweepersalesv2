@@ -24,7 +24,7 @@ export default function About() {
           Who We Are
         </h2>
         <p tw="text-black text-opacity-70 mb-4">
-          Since we opened, Al's has been providing quality vacuums, parts,
+          Since we opened, Al&apos;s has been providing quality vacuums, parts,
           supplies, and cleaners as well as vacuum and sewing machine repair
           services in Wilmington, Ohio. Our goal is to provide exceptional
           service to anyone who walks through our door.

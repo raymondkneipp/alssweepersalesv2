@@ -47,7 +47,7 @@ export default function Navbar() {
           <Link href="/" passHref>
             <a tw="font-bold text-base sm:text-lg lg:text-xl grid grid-flow-col gap-2 items-center hocus:(underline outline-none)">
               <Logo />
-              Al's Sweeper &apos;
+              Al&apos;s Sweeper &amp;
               <br /> Sewing Center
             </a>
           </Link>

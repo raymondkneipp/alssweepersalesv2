@@ -8,8 +8,8 @@ export default function Layout({ title, children }) {
     <>
       <Head>
         <title>
-          Shop Vacuums, Bags, Filters, And More | {title} | Al's Sweeper &
-          Sewing Center
+          Shop Vacuums, Bags, Filters, And More | {title} | Al&apos;s Sweeper
+          &amp; Sewing Center
         </title>
 
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

@@ -11,7 +11,7 @@ export default function Footer() {
     <footer tw="py-10 border-t text-sm">
       <StyledContainer>
         <div tw="flex flex-col items-center md:(space-x-4 space-y-0 flex-row) space-y-4 text-black text-opacity-60">
-          <p>&copy; 2021 by Al's Sweeper &apos; Sewing Center</p>
+          <p>&copy; 2021 by Al&apos;s Sweeper &amp; Sewing Center</p>
           <a
             href="https://raymondkneipp.com"
             tw="hocus:(outline-none underline)"
