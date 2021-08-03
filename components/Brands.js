@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 import Image from "next/image";
 
 const Brand = ({ src, alt }) => (
-  <div tw="mx-20">
+  <div tw="mx-5 md:mx-10 lg:mx-20">
     <Image
       src={`/brands/${src}`}
       layout="fixed"

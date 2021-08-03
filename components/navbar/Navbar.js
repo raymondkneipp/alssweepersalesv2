@@ -54,7 +54,7 @@ export default function Navbar() {
           <MenuButton toggle={handleToggle} open={open} />
           <div
             css={[
-              tw`hidden flex-1 justify-center fixed top-2 bottom-2 right-2 left-2 bg-white rounded-lg shadow-md z-0 space-y-4 sm:(space-y-0 flex top-4 bottom-4 right-8 left-8 relative bg-transparent justify-center top-0 right-0 left-0 bottom-0 shadow-none)`,
+              tw`hidden flex-1 justify-center fixed top-20 py-5 px-10 right-4 left-4 bg-white rounded-lg shadow-md z-0 space-y-4 sm:(py-0 px-0 space-y-0 flex relative bg-transparent justify-center top-0 right-0 left-0 bottom-0 shadow-none)`,
               open && tw`flex flex-col sm:(flex-row)`,
             ]}
           >
