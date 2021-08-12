@@ -15,9 +15,8 @@ export default function Layout({ title, children }) {
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/png" href="/favicon.png" />
 
-        <meta name="theme-color" content="#FDE68A" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#FDE68A" />
+        <meta name="theme-color" content="#fde68a" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#fde68a" />
       </Head>
 
       <Navbar />
