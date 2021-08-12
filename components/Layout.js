@@ -14,6 +14,8 @@ export default function Layout({ title, children }) {
 
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/png" href="/favicon.png" />
+
+        <meta name="theme-color" content="#FDE68A" />
       </Head>
 
       <Navbar />
